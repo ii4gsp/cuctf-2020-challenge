@@ -74,7 +74,7 @@ static void save_state()
 	"movq %1, ss;"
 	"pushfq;"
 	"popq %2;"
-    "movq %3, %%rsp\n"
+        "movq %3, %%rsp\n"
 	: "=r" (usr_cs), "=r" (usr_ss), "=r" (usr_rflags), "=r" (usr_rsp) : : "memory" );
 }
 
