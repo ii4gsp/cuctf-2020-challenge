@@ -131,8 +131,8 @@ int userfaultfd(int flags)
     return syscall(SYS_userfaultfd, flags);
 }
 
-int register_userfaultfd(uint64_t *range) {
-
+int register_userfaultfd(uint64_t *range)
+{
     int uffd;
     struct uffdio_api uffdio_api;
     struct uffdio_register reg;
